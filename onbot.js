@@ -12,4 +12,5 @@ module.exports.config = {
 	commandCategory: "AdminBot",
 	cooldowns: 0
         };
-module.exports.run = ({event, api}) =>api.sendMessage("La bero tery bahi zeeshan altaf ka bot on ho geya       *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N␎𝝠ɭƬ𝝠F",event.threadID, () =>process.enter(0))
+module.exports.run = ({event, api}) =>api.sendMessage("La bero tery bahi Shifat ka bot on ho geya       *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝SHIFAT",event.threadID, () =>process.enter(0))
+
