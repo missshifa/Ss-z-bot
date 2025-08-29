@@ -34,6 +34,7 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.imgur.com/9ePWKm3.jpeg",  
 "https://i.imgur.com/ABhsKdj.jpeg"
      ];
-     var callback = () => api.sendMessage({body:`👽 Hey Iam Zeeshan Altaf 🙈, How May I Help You 😘 You Can See My More Pics Then Type Figure like (1...9) 😊`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
+     var callback = () => api.sendMessage({body:`👽 Hey Iam Shifatg🙈, How May I Help You 😘 You Can See My More Pics Then Type Figure like (1...9) 😊`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
+
    };
