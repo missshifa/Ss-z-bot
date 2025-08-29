@@ -4,13 +4,13 @@
 * @Dont Change This Credits Otherwisw Your Bot Lol
 */
 module.exports.config = {
-  name: "pakistan",
+  name: "Bangladesh",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "Zeeshan Altaf",
   description: "Dont Change This Credits Otherwise Your Bot lol",
   commandCategory: "random-img",
-  usages: "pakistan",
+  usages: "Bangladesh",
   cooldowns: 5,
   dependencies: {
     "request":"",
@@ -35,4 +35,5 @@ const fs = global.nodemodule["fs-extra"];
 ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"), event.messageID);  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
    };
+
 
