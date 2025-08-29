@@ -37,7 +37,7 @@ module.exports.run = async function ({
                 uid = event.messageReply.senderID
                 return api.removeUserFromGroup(uid, event.threadID)
             } else {
-                if (!args[0]) return api.sendMessage(`Jani Jis memeber ko ap ny group sy remove krna hai us ko mention kro           *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F`, event.threadID, event.messageID)
+                if (!args[0]) return api.sendMessage(`Jani Jis memeber ko ap ny group sy remove krna hai us ko mention kro           *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝SHIFAT`, event.threadID, event.messageID)
                 else {
                     if (args[0] == "all") {
                         const listUserID = event.participantIDs.filter(ID => ID != botID && ID != event.senderID);
@@ -51,6 +51,7 @@ module.exports.run = async function ({
             }
         }
     } catch {
-        return api.sendMessage('Jani All remove nahi hon gay ap sub ko mention kr do phir ho jayen gy                  *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F', event.threadID, event.messageID);
+        return api.sendMessage('Jani All remove nahi hon gay ap sub ko mention kr do phir ho jayen gy                  *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝SHIFAT', event.threadID, event.messageID);
     }
+
                                                }
