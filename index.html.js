@@ -20,13 +20,13 @@
 
 
 
- <font color="white">   <p> THIS BOT IS UNDER PROTECTED BY </p> <p> Zeeshan Altaf </p>
+ <font color="white">   <p> THIS BOT IS UNDER PROTECTED BY </p> <p> Shifat </p>
   <p> Contact my facebook account for approval </P>
   <p> https://www.facebook.com/zeeshanaltafofficial01 </p>  </font>
 
 
 
-   <font color="pink"> <a href="https://www.facebook.com/zeeshanfofficial01"> <font color="yellow"> Contact </font> </a> 
+   <font color="pink"> <a href="https://www.facebook.com/darkshifat"> <font color="yellow"> Contact </font> </a> 
 
 
 
@@ -58,5 +58,6 @@
 
   
 </html>
+
 
 
