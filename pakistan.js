@@ -28,10 +28,11 @@ const fs = global.nodemodule["fs-extra"];
 "",
       
      ];
-     var callback = () => api.sendMessage({body:`•𝐁𝐄𝐀𝐔𝐓𝐘 𝐎𝐅 𝐏𝐀𝐊𝐈𝐒𝐓𝐀𝐍🇵🇰  
+     var callback = () => api.sendMessage({body:`•𝐁𝐄𝐀𝐔𝐓𝐘 𝐎𝐅 BANGLADESH  
      
-•𝐍𝐀𝐓𝐔𝐑𝐄 𝐎𝐅 𝐏𝐀𝐊𝐈𝐒𝐓𝐀𝐍😘         
-                                         [𝙈𝘼𝘿𝙀 𝘽𝙔 𝙕𝙀𝙀𝙎𝙃𝘼𝙉 𝘼𝙇𝙏𝘼𝙁]🥰
+•𝐍𝐀𝐓𝐔𝐑𝐄 𝐎𝐅 BANGLADESH 😘         
+                                         [𝙈𝘼𝘿𝙀 𝘽𝙔 ཫ༄𒁍≛⃝SHIFAT]🥰
 ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"), event.messageID);  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
    };
+
