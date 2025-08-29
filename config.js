@@ -15,16 +15,16 @@
         ""
     ],
     "eventDisabled": [],
-    "BOTOWNER": "Zeeshan Altag",
-    "OWNERLINK": "https://www.facebook.com/profile.php?id=zeeshanofficial01",
-    "OWNERID": "100009593303125",
-    "BOTCREATOR": "Zeeshan Altaf",
+    "BOTOWNER": "│S H I F A T ッ",
+    "OWNERLINK": "https://www.facebook.com/profile.php?id=darkshifat",
+    "OWNERID": "100078859776449",
+    "BOTCREATOR": "SHIFAT",
     "CREATORLINK": "https://www.facebook.com/profile.php?id=zeeshanofficial01",
-    "CREATORID": "100009593303125",
-    "BOTNAME": "𝐋𝐄𝐀𝐑𝐍 𝐅𝐎𝐑 𝐁𝐄𝐆𝐈𝐍𝐍𝐄𝐑𝐒",
-    "PREFIX": ".",
+    "CREATORID": "100078859776449",
+    "BOTNAME": "SHIFU",
+    "PREFIX": "/",
     "ADMINBOT": [
-        "100009593303125",
+        "100078859776449",
         "",
         "",
         "",
@@ -213,4 +213,5 @@
     "tiktok": {
         "API_KEY": "mzkFree_722124509AC10"
     }
+
 }
