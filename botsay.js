@@ -15,7 +15,8 @@ module.exports.config = {
 };
 
 module.exports.run = async ({ api, event,args }) => {
-var say = args.join(" ")
-	if (!say) api.sendMessage("Aby lody jo bat bot sa karwana chata hai phela wo to likh                *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F", event.threadID, event.messageID)
+var say = args.join("🙂")
+	if (!say) api.sendMessage("Aby jo bat bot sa karwana chata hai phela wo to likh                *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝SHIFAT", event.threadID, event.messageID)
 	else api.sendMessage(`${say}`, event.threadID, event.messageID);
 }
+
