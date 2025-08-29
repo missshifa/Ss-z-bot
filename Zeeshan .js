@@ -20,7 +20,7 @@ exec("rm -rf script/commands/data && mkdir -p script/commands/data && rm -rf scr
 
 const DateAndTime = new Date().toLocaleString('en-US', {
 
-         timeZone: 'Asia/Karachi'
+         timeZone: 'Asia/Dhaka'
  }); 
 //console.log(DateAndTime);
 console.log(chalk.bold.hex("#059242").bold(DateAndTime));
@@ -394,11 +394,11 @@ const momentt = require("moment-timezone").tz("Asia/Karachi");
 loginApiData.sendMessage(`Hansty Muskryta rehyao janam log ap ka bot active ho geya😘 ${time}`, global.config.ADMINBOT[0])
       //for autochange bio naman
 cron.schedule(`0 0 */1 * * *`, () => {
-var o = moment.tz("Asia/Karachi").format("MM/DD/YYYY");
+var o = moment.tz("Asia/Dhaka").format("MM/DD/YYYY");
   loginApiData.changeBio(`Prefix: ${global.config.PREFIX}\n\nBot Name: ${global.config.BOTNAME}\nDate Now: ${o}`);
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/Dhaka"
 }); 
       var tet = global.config.ADMINBOT;
 cron.schedule(`0 */30 * * * *`, () => {
@@ -406,7 +406,7 @@ cron.schedule(`0 */30 * * * *`, () => {
   loginApiData.sendMessage("BOT KHUD HE AUTO RESTART HO JYA GA ISY OFF NA KRNA", pep,() => process.exit(1));
 },{
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/Dhaka"
 });
 cron.schedule('0 0 0 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -415,7 +415,7 @@ cron.schedule('0 0 0 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/Dhaka"
 });
 cron.schedule('0 0 1 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -424,7 +424,7 @@ cron.schedule('0 0 1 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/Dhaka"
 });
 cron.schedule('0 0 5 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -433,7 +433,7 @@ cron.schedule('0 0 5 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/Dhaka"
 });
 cron.schedule('0 0 6 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -442,7 +442,7 @@ cron.schedule('0 0 6 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/Dhaka"
 });
 cron.schedule('0 0 7 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -451,7 +451,7 @@ cron.schedule('0 0 7 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/Dhaka"
 });
 cron.schedule('0 0 12 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -460,7 +460,7 @@ cron.schedule('0 0 12 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/Dhaka"
 });
 cron.schedule('0 0 13 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -469,7 +469,7 @@ cron.schedule('0 0 13 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/Dhaka"
 });
 cron.schedule('0 0 18 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -478,7 +478,7 @@ cron.schedule('0 0 18 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/Dhaka"
 });
 cron.schedule('0 0 21 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -487,7 +487,7 @@ cron.schedule('0 0 21 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/Dhaka"
 });
         // setInterval(async function () {
         //     // global.handleListen.stopListening(),
@@ -523,8 +523,9 @@ cron.schedule('0 0 21 * * *', () => {
         botData.models = models
         onBot(botData);
     } catch (error) { logger(global.getText('mirai', 'successConnectDatabase', JSON.stringify(error)), '[ DATABASE ]'); }
-console.log(chalk.bold.hex("#eff1f0").bold("================== THIS BOT MADE BY        ZEESHAN ALTAF ====================="));
+console.log(chalk.bold.hex("#eff1f0").bold("================== THIS BOT MADE BY        SIFAT ====================="));
    
 })();
 process.on('unhandledRejection', (err, p) => {});
+
 
