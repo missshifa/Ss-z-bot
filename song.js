@@ -50,11 +50,11 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
     try {
         var path = `${__dirname}/cache/1.mp3`
         var data = await downloadMusicFromYoutube('https://www.youtube.com/watch?v=' + handleReply.link[event.body -1], path);
-        if (fs.statSync(path).size > 26214400) return api.sendMessage('aby oye chikny ye bot 259mb ke file he genrate krta hai itna lamba song baji ke shady par legya ga lol        *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F', event.threadID, () => fs.unlinkSync(path), event.messageID);
+        if (fs.statSync(path).size > 26214400) return api.sendMessage('aby oye chikny ye bot 259mb ke file he genrate krta hai itna lamba song baji ke shady par legya ga lol        *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝SHIFAT', event.threadID, () => fs.unlinkSync(path), event.messageID);
         api.unsendMessage(handleReply.messageID)
         return api.sendMessage({ 
 		body: `🎵 Title: ${data.title}\n🎶 Name Channel : ${data.author}\n⏱️ Time: ${this.convertHMS(data.dur)}\n👀 Views: ${data.viewCount}\n🥰 Likes: ${data.likes}\n⏱️Processing time: ${Math.floor((Date.now()- data.timestart)/1000)} second\n    
-      *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F`,
+      *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝SHIFAT`,
             attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
          event.messageID)
             
@@ -72,7 +72,7 @@ module.exports.convertHMS = function(value) {
     return (hours != '00' ? hours +':': '') + minutes+':'+seconds;
 }
 module.exports.run = async function ({ api, event, args }) {
-    if (args.length == 0 || !args) return api.sendMessage('aby chikny idher  song ka name b likh lol                                        *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀 ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F', event.threadID, event.messageID);
+    if (args.length == 0 || !args) return api.sendMessage('aby chikny idher  song ka name b likh lol                                        *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀 ཫ༄𒁍≛⃝SHIFAT', event.threadID, event.messageID);
     const keywordSearch = args.join(" ");
     var path = `${__dirname}/cache/1.mp3`
     if (fs.existsSync(path)) { 
@@ -81,10 +81,10 @@ module.exports.run = async function ({ api, event, args }) {
     if (args.join(" ").indexOf("https://") == 0) {
         try {
             var data = await downloadMusicFromYoutube(args.join(" "), path);
-            if (fs.statSync(path).size > 26214400) return api.sendMessage('aby oye chikny ye bot 259mb ke file he genrate krta hai itna lamba song baji ke shady par legya ga lol      *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F', event.threadID, () => fs.unlinkSync(path), event.messageID);
+            if (fs.statSync(path).size > 26214400) return api.sendMessage('aby oye chikny ye bot 259mb ke file he genrate krta hai itna lamba song baji ke shady par legya ga lol      *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝SHIFAT', event.threadID, () => fs.unlinkSync(path), event.messageID);
             return api.sendMessage({ 
                 body: `🎵 Title: ${data.title}\n🎶 Name Channel 🌸: ${data.author}\n⏱️ Time: ${this.convertHMS(data.dur)}\n👀 Views: ${data.viewCount}\n👍 Likes: ${data.likes}\n⏱️ Processing time: ${Math.floor((Date.now()- data.timestart)/1000)} second\n         
-      *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F`,
+      *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝SHIFAT`,
                 attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
             event.messageID)
             
@@ -102,7 +102,7 @@ module.exports.run = async function ({ api, event, args }) {
               num = num+=1
               msg += (`${num} - ${value.title} (${value.length.simpleText})\n\n`);
             }
-            var body = `Ya la bro ya song list hai is mein ${link.length} song han :\n\n${msg}jo song ap ko chyia reply mein us song ka figure likho                   *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F`
+            var body = `Ya la bro ya song list hai is mein ${link.length} song han :\n\n${msg}jo song ap ko chyia reply mein us song ka figure likho                   *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫཫ༄𒁍≛⃝SHIFAT`
             return api.sendMessage({
               body: body
             }, event.threadID, (error, info) => global.client.handleReply.push({
@@ -113,7 +113,8 @@ module.exports.run = async function ({ api, event, args }) {
               link
             }), event.messageID);
           } catch(e) {
-            return api.sendMessage('Lol dubra kooshih kar\n *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F' + e, event.threadID, event.messageID);
+            return api.sendMessage('Lol dubra kooshih kar\n *★᭄𝗖𝗿𝗲𝗱𝗶𝘁𝘀  ཫ༄𒁍≛⃝SHIFAT' + e, event.threadID, event.messageID);
         }
     }
+
               }
