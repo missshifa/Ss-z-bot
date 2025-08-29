@@ -32,7 +32,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
           };
     if(react.includes("BROKEN") || react.includes("broken") || react.includes("Broken") || react.includes("sad") || react.includes("SAD") || react.includes("Sad") || react.includes("Pain") || react.includes("pain") || react.includes("PAIN") || react.includes("Nafrat") || react.includes("nafrat") || react.includes("NAFRAT") || react.includes("Hateu") || react.includes("I hate u") || react.includes("I HATE U") || react.includes("Udas") || react.includes("udas") || react.includes("UDAS") || react.includes("juth") || react.includes(" 😥") || react.includes("😰") || react.includes("😨") || react.includes("😞") || react.includes("☹️") || react.includes("😟") || react.includes("😢") || react.includes("Frod") || react.includes("💔") || react.includes("Go") || react.includes("Jao") || react.includes("Tum") || react.includes("TUM") || react.includes("tum") || react.includes("🥺") || react.includes("😭")) {
       var sad = {
-				body:"                   مجـھے ٹـوٹـے ہـوئـے لـوگ پسنـد ہیـں💔                     🥺سنـا ھـے اُن میـں غـرور نہیـں ھـوتـا"
+				body:"    🤧🤧                   "
 			}
 			api.sendMessage(sad, threadID, messageID);
     api.setMessageReaction("💔", event.messageID, (err) => {}, true)
@@ -49,7 +49,7 @@ react.includes("MAA") ||
 react.includes("LUND") || 
 react.includes("👿")) {
       var sad = {
-				body: "Oye Chutyia Abuse Na kr 👿"
+				body: "Oye Chutyia Ase Na kr 👿"
 			}
 			api.sendMessage(sad, threadID, messageID);
     api.setMessageReaction("👿", event.messageID, (err) => {}, true)
@@ -57,7 +57,7 @@ react.includes("👿")) {
     if(react.includes("Very") || react.includes("Hbd") || 
 react.includes("Happy Birdhday") || react.includes("Gud Nyt") || react.includes("Gud morning") || react.includes("Afternoon") || react.includes("Gudnight") || react.includes("n8") || react.includes("gudnyt") || react.includes("Gud mrng") || react.includes("Morning") || react.includes("🥳") || react.includes("😴")) {
       var heart = {
-				body: "So Jayo Pyaro Bacho😂💙"
+				body: "So Ja Pyare Bache😂💙"
 			}
 			api.sendMessage(heart, threadID, messageID);
     api.setMessageReaction("💙", event.messageID, (err) => {}, true)
@@ -66,3 +66,4 @@ react.includes("Happy Birdhday") || react.includes("Gud Nyt") || react.includes(
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
 
   }
+
